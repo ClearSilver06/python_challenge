@@ -63,9 +63,9 @@ print(f'Average Change: ${average_net_change:.2f}')
 print(f'Greatest Profit: {greatest_profit_month} (${greatest_profit})')
 print(f'Greatest Loss: {greatest_loss_month} (${greatest_loss})')
 
-#with open(output_file, 'w') as txt_file:
-    #txt_file.write(f'Total Months: {total_months}\n')
-   # txt_file.write(f'Total Net: ${total_net}\n')
-  #  txt_file.write(f'Average Change: ${average_net_change:.2f}\n')
-  #  txt_file.write(f'Greatest Increase in Profits: {greatest_profit_month} (${greatest_profit})\n')
-   # txt_file.write(f'Greatest Decrease in Profits: {greatest_loss_month} (${greatest_loss})\n')
+with open(output_file, 'w') as txt_file:
+    txt_file.write(f'Total Months: {total_months}\n')
+    txt_file.write(f'Total Net: ${total_net}\n')
+    txt_file.write(f'Average Change: ${average_net_change:.2f}\n')
+    txt_file.write(f'Greatest Increase in Profits: {greatest_profit_month} (${greatest_profit})\n')
+    txt_file.write(f'Greatest Decrease in Profits: {greatest_loss_month} (${greatest_loss})\n')
